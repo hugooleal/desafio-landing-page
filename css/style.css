@@ -22,6 +22,8 @@ header{
 
 body{
     background-image: linear-gradient(to bottom,#282930,#0A0A0D);
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -57,35 +59,18 @@ body{
             'main'
             'timer'
             'foot';
-        margin-top: 100px;
-        margin-bottom: 100px;
     }
-
-    .section-one > div{
-        padding: 20px;   
-    }
-
-    .main-text-container h1{
-        text-align: center;
-        line-height: 200px;
-        font-weight: 900;
-        text-shadow: var(--shadow);
-    }
-
-    .sub-text-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        grid-area: foot;
-        justify-content: center;
-        gap: 10px;
-    }
-
 }
 
 .section-one > div{
     margin: auto;
     
+}
+
+@media (max-width: 1549px) {
+    .section-one > div{
+        padding: 20px;   
+    }
 }
 
 .main-text-container{
@@ -100,6 +85,16 @@ body{
     text-shadow: var(--shadow);
 }
 
+
+@media (max-width: 1549px) {
+    .main-text-container h1{
+        text-align: center;
+        line-height: 200px;
+        font-weight: 900;
+        text-shadow: var(--shadow);
+    }
+}
+
 .main-text-container a{
     text-decoration: none;
 }
@@ -109,6 +104,17 @@ body{
     align-items: center;
     grid-area: foot;
     justify-content: center;
+}
+
+@media (max-width: 1549px) {
+    .sub-text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: foot;
+        justify-content: center;
+        gap: 10px;
+    }
 }
 
 .sub-text-container p{
@@ -181,8 +187,8 @@ body{
     margin: 15px;
     padding: 0;
     border-radius: 5px;
-    height: 450px;
-    width: 300px;
+    height: 28.125rem;
+    width: 18.75rem;
     text-align: center;
     display: flex;
     align-items: flex-start;
@@ -212,6 +218,18 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+}
+
+@media (max-width: 1549px) {
+    .footer{
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 10px;
+    }
 }
 
 .footer svg{
