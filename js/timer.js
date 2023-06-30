@@ -1,4 +1,4 @@
-const blackFriday = new Date("Nov 26, 2021 00:00:00").getTime();
+const blackFriday = new Date("Nov 26, 2023 00:00:00").getTime();
 
 const x = setInterval(function() {
 
